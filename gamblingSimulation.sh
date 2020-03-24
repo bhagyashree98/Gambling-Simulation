@@ -29,3 +29,24 @@ do
 	bet
 done
 }
+
+#Uc4
+c=0
+month(){
+while [ $day -lt 20 ]
+do
+	day
+	arr[$c]=$stake
+	c=$(($c + 1))
+	if [ $stake -eq 150 ]
+	then 
+		won=$(($won + 50))
+	else
+		lost=$(($lost + 50))
+	fi
+	day=$(($day + 1))
+done
+echo "Total won amount is $won"
+echo "Total lost amount is $lost"
+}
+month
