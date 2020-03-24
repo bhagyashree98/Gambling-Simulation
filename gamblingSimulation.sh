@@ -50,3 +50,13 @@ echo "Total won amount is $won"
 echo "Total lost amount is $lost"
 }
 month
+
+#Uc5
+
+days(){
+winday=$(($won / $low))
+lostday=$(($lost / $low))
+echo "days of won is $winday"
+echo "days of lost is $lostday"
+}
+days
