@@ -60,3 +60,18 @@ echo "days of won is $winday"
 echo "days of lost is $lostday"
 }
 days
+
+#Uc6
+
+findday(){
+for ((i=0; i<20; i++))
+do
+	if [ ${arr[$i]} -eq $high ]
+	then
+		echo "Luckiest day $(($i + 1))"
+	else
+		echo "Unluckiest day $(($i + 1))"
+	fi
+done
+}
+findday
