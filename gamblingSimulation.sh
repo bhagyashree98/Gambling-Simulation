@@ -75,3 +75,26 @@ do
 done
 }
 findday
+
+#Uc7
+
+while [ true ]
+do
+if [ $winday -gt $lostday ]
+then
+	echo "You are win last month"
+	echo -e "You want to continue...\n1:yes\n2:no"
+	read ch
+	if [ $ch == 'yes' ]
+	then
+		month
+		days
+		findday
+	else
+		exit
+	fi
+else
+	echo "You are lost last month"
+	exit
+fi
+done
