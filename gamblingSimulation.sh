@@ -17,3 +17,15 @@ else
 	stake=$(($stake - 1))
 fi
 }
+
+#Uc3
+
+high=$(($stake + $(($stake / 2))))
+low=$(($stake - $(($stake / 2))))
+day(){
+stake=100
+while [ $stake -lt $high ] && [ $stake -gt $low ]
+do
+	bet
+done
+}
